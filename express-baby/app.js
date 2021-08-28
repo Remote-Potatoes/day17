@@ -6,8 +6,10 @@ const app = express();
 // "/"
 app.get("/", (request, response) => {
   console.log("HERE?");
-  response.write("<h1>Hello Home Page</h1>");
-  response.end();
+  response.sendFile(__dirname + "/views/index.html");
+  console.log(__dirname);
+  //   response.write("<h1>Hello Home Page</h1>");
+  //   response.end();
 });
 
 app.get("/about", (request, response) => {
