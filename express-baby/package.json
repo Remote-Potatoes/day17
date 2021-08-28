@@ -1,0 +1,16 @@
+{
+  "name": "express-baby",
+  "version": "1.0.0",
+  "description": "we are building our very own express server. pablo, do you know that song that goes: something(not safe for work)baby, lets talk about you and me, lets talk about all the good things...",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "André de Albuquerque",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
