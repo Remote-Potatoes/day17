@@ -10,7 +10,20 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   const randomNumber = Math.random();
-  res.render("home-page", { isRemotePotatoes: randomNumber < 0.5, user: {} });
+  res.render("home-page", {
+    isRemotePotatoes: randomNumber < 0.5,
+    user: {},
+    students: [
+      "Anna",
+      "Marie",
+      "Chris",
+      "Chiao-I",
+      "Daniel",
+      "Noemi",
+      "Juan",
+      "Pablo",
+    ],
+  });
 });
 
 app.get("/about", (req, res) => {
